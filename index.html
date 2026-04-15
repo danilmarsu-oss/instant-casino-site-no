@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="nb-no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Opplev vårt instant casino med raske innskudd, umiddelbare uttak og moderne spill. Spill enkelt på instantcasinos.no – sikkert, effektivt og uten registrering.">
+  <title>Instant Casino – Offisiell nettside i Norge med 200% Velkomstbonus</title>
+  <link rel="canonical" href="/">
+  <link rel="icon" type="image/x-icon" href="instant%20casino%20images/favicon%20(2).ico">
+  <style>
+    :root {
+      --bg-main: #04060a;
+      --bg-chrome: #0e1014;
+      --accent: #f0a433;
+      --text-main: #f2f3f5;
+      --text-muted: #b6bbc3;
+      --card: #121720;
+      --border: #242c3a;
+      --max-width: 1200px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle at top, #111624 0%, var(--bg-main) 40%);
+      color: var(--text-main);
+      font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+
+    a {
+      color: var(--text-main);
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .container {
+      width: min(100% - 2rem, var(--max-width));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--bg-chrome);
+      border-bottom: 1px solid #171b25;
+    }
+
+    .header-inner {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.5rem 0;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      min-width: 0;
+    }
+
+    .logo {
+      width: 190px;
+      height: auto;
+      flex-shrink: 0;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      white-space: nowrap;
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--text-main);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-shrink: 0;
+    }
+
+    .btn {
+      border: 0;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 700;
+      transition: transform 0.2s ease, filter 0.2s ease;
+      font-family: inherit;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      filter: brightness(1.05);
+      transform: translateY(-1px);
+    }
+
+    .btn-header {
+      background: var(--accent);
+      color: #111;
+      padding: 0.6rem 1rem;
+      font-size: 0.92rem;
+    }
+
+    .hero {
+      padding: 2rem 0 1rem;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 0 1rem;
+      font-size: clamp(1.8rem, 3.3vw, 3rem);
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    .hero-banner {
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      overflow: hidden;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    .cta-wrap {
+      text-align: center;
+      margin: 1.4rem 0 2rem;
+    }
+
+    .btn-cta {
+      background: var(--accent);
+      color: #1b1203;
+      font-size: 1.1rem;
+      padding: 0.95rem 2.2rem;
+      border-radius: 999px;
+      animation: pulse 1.8s infinite;
+      box-shadow: 0 0 0 0 rgba(240, 164, 51, 0.65);
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(240, 164, 51, 0.55);
+      }
+      70% {
+        transform: scale(1.02);
+        box-shadow: 0 0 0 18px rgba(240, 164, 51, 0);
+      }
+      100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(240, 164, 51, 0);
+      }
+    }
+
+    .section {
+      padding: 1.6rem 0;
+    }
+
+    .section h2 {
+      margin: 0 0 0.9rem;
+      font-size: clamp(1.35rem, 2.2vw, 2rem);
+    }
+
+    .section h3 {
+      margin: 1.2rem 0 0.75rem;
+      font-size: clamp(1.05rem, 1.8vw, 1.3rem);
+      color: #ffe4b6;
+    }
+
+    .games-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 0.85rem;
+    }
+
+    .game-card {
+      aspect-ratio: 1 / 1;
+      border-radius: 14px;
+      overflow: hidden;
+      background: #11161f;
+      border: 1px solid var(--border);
+    }
+
+    .game-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .seo-box,
+    .card-box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1rem;
+    }
+
+    .seo-box ul,
+    .seo-box ol {
+      margin: 0.6rem 0 1rem 1.2rem;
+      padding: 0;
+    }
+
+    .seo-table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 10px;
+      border: 1px solid #2a3242;
+    }
+
+    .seo-table th,
+    .seo-table td {
+      padding: 0.7rem;
+      text-align: left;
+      border-bottom: 1px solid #2a3242;
+      font-size: 0.95rem;
+    }
+
+    .seo-table th {
+      background: #1b2230;
+    }
+
+    .seo-inline-image {
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid #2a3242;
+      margin: 0.8rem 0 1rem;
+      max-height: 440px;
+      object-fit: cover;
+    }
+
+    .logo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 0.8rem;
+      align-items: stretch;
+    }
+
+    .logo-card {
+      border: 1px solid var(--border);
+      background: #0f141c;
+      border-radius: 12px;
+      padding: 0.75rem;
+      display: grid;
+      place-items: center;
+      min-height: 88px;
+    }
+
+    .logo-card img {
+      max-height: 42px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .reviews {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.8rem;
+    }
+
+    .review-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1rem;
+    }
+
+    .review-name {
+      font-weight: 700;
+      margin-bottom: 0.35rem;
+      color: #ffd28d;
+    }
+
+    .accordion-item {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      background: #0f141d;
+      margin-bottom: 0.6rem;
+    }
+
+    .accordion-trigger {
+      width: 100%;
+      background: transparent;
+      border: 0;
+      color: var(--text-main);
+      text-align: left;
+      font: inherit;
+      cursor: pointer;
+      padding: 0.85rem 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .accordion-trigger span:last-child {
+      font-weight: 700;
+      color: var(--accent);
+      margin-left: 0.7rem;
+    }
+
+    .accordion-panel {
+      display: none;
+      padding: 0 1rem 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .page-updated {
+      text-align: center;
+      color: var(--text-muted);
+      padding: 0.9rem 0 1.1rem;
+      font-size: 0.95rem;
+    }
+
+    .site-footer {
+      background: var(--bg-chrome);
+      border-top: 1px solid #171b25;
+      margin-top: 1rem;
+      padding-top: 1rem;
+    }
+
+    .footer-trust {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 0.75rem;
+    }
+
+    .trust-link {
+      border: 1px solid #262e3d;
+      border-radius: 10px;
+      background: #131924;
+      display: grid;
+      place-items: center;
+      padding: 0.75rem;
+      min-height: 82px;
+    }
+
+    .trust-link img {
+      max-height: 45px;
+      object-fit: contain;
+      width: auto;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem 1.1rem;
+      margin: 1rem 0;
+      padding: 0;
+      list-style: none;
+      justify-content: center;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .providers-row {
+      border-top: 1px solid #1e2532;
+      padding-top: 0.9rem;
+      margin-top: 0.45rem;
+    }
+
+    .providers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+      gap: 0.6rem;
+      align-items: center;
+    }
+
+    .provider-card {
+      border: 1px solid #242c3a;
+      border-radius: 10px;
+      background: #10161f;
+      min-height: 78px;
+      padding: 0.6rem;
+      display: grid;
+      place-items: center;
+    }
+
+    .provider-card img {
+      width: auto;
+      max-height: 40px;
+      object-fit: contain;
+    }
+
+    .copyright {
+      text-align: center;
+      padding: 1rem 0 1.2rem;
+      color: #9ea5b0;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 992px) {
+      .games-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .reviews {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        width: min(100% - 1rem, var(--max-width));
+      }
+
+      .header-inner {
+        min-height: 56px;
+        padding: 0.35rem 0;
+      }
+
+      .logo {
+        width: 102px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .btn-header {
+        padding: 0.43rem 0.6rem;
+        font-size: 0.78rem;
+        border-radius: 8px;
+      }
+
+      .hero {
+        padding-top: 1rem;
+      }
+
+      .btn-cta {
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .games-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .seo-table th,
+      .seo-table td {
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="header-left">
+        <a href="/" aria-label="Instant Casino hjem">
+          <img class="logo" src="instant%20casino%20images/instant%20casino%20logo.svg" alt="Instant Casino logo">
+        </a>
+        <nav class="nav-links" aria-label="Hovednavigasjon">
+          <a href="/bonus/">Kampanjer</a>
+          <a href="/app/">App</a>
+        </nav>
+      </div>
+      <div class="header-actions">
+        <a class="btn btn-header" href="/login/">Logg inn</a>
+        <a class="btn btn-header" href="/go/">Register</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <h1>Instant Casino</h1>
+      <div class="hero-banner">
+        <img src="instant%20casino%20images/instant%20casino.webp" alt="Instant Casino banner">
+      </div>
+      <div class="cta-wrap">
+        <a class="btn btn-cta" href="/go/">Spill nå!</a>
+      </div>
+    </section>
+
+    <section class="section container">
+      <h2>Populære spill</h2>
+      <div class="games-grid" aria-label="Spillutvalg">
+        <article class="game-card"><img src="instant%20casino%20images/instant%20casino%20games.webp" alt="Spill 1"></article>
+        <article class="game-card"><img src="instant%20casino%20images/instant%20casino%20bonuses.webp" alt="Spill 2"></article>
+        <article class="game-card"><img src="instant%20casino%20images/instant%20casino%20vip%20club.webp" alt="Spill 3"></article>
+        <article class="game-card"><img src="instant%20casino%20images/instant%20casino%20registration.webp" alt="Spill 4"></article>
+        <article class="game-card"><img src="instant%20casino%20images/instant%20casino%20support.webp" alt="Spill 5"></article>
+        <article class="game-card"><img src="instant%20casino%20images/welcome%20to%20instant%20casino.webp" alt="Spill 6"></article>
+        <article class="game-card"><img src="instant%20casino%20images/instant%20casino.webp" alt="Spill 7"></article>
+        <article class="game-card"><img src="instant%20casino%20images/instant%20casino%20games.webp" alt="Spill 8"></article>
+        <article class="game-card"><img src="instant%20casino%20images/instant%20casino%20vip%20club.webp" alt="Spill 9"></article>
+        <article class="game-card"><img src="instant%20casino%20images/instant%20casino%20support.webp" alt="Spill 10"></article>
+      </div>
+    </section>
+
+    <section class="section container" id="kampanjer">
+      <div class="seo-box">
+        <p>Velkommen til vårt <strong>instant casino</strong>, hvor vi gir deg en sømløs og rask spillopplevelse fra første øyeblikk. Hos oss får du tilgang til moderne spill, sikre betalinger og enkel registrering. Vår plattform er designet for deg som ønsker et effektivt <strong>instantcasino</strong> uten unødvendige steg, slik at du kan fokusere på det som virkelig betyr noe – underholdning og spenning.</p>
+        <h2>Instant Casino – rask og moderne spillopplevelse</h2>
+        <img class="seo-inline-image" src="instant%20casino%20images/welcome%20to%20instant%20casino.webp" alt="Welcome to instant casino">
+        <p>Hos oss tilbyr vi et brukervennlig <strong>instant casino</strong> der alt er tilrettelagt for raske innlogginger og sømløs spilling. Vi fokuserer på sikkerhet, moderne teknologi og et bredt spillutvalg som passer både nye og erfarne spillere. Vår løsning gjør at du slipper kompliserte registreringsprosesser, samtidig som du får full kontroll over dine innskudd og uttak. Med vår erfaring fra <strong>instantcasino</strong>-markedet sørger vi for en trygg og effektiv opplevelse hver gang du spiller.</p>
+        <table class="seo-table" aria-label="Informasjon om instant casino">
+          <thead>
+            <tr>
+              <th>Informasjon</th>
+              <th>Detaljer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Nettside</td>
+              <td>instantcasinos.no</td>
+            </tr>
+            <tr>
+              <td>Fokus</td>
+              <td>Instant casino og raske spillopplevelser</td>
+            </tr>
+            <tr>
+              <td>Spillutvalg</td>
+              <td>Spilleautomater, live casino, bordspill</td>
+            </tr>
+            <tr>
+              <td>Registrering</td>
+              <td>Rask og uten kompliserte steg</td>
+            </tr>
+            <tr>
+              <td>Betalingsmetoder</td>
+              <td>Moderne løsninger med raske transaksjoner</td>
+            </tr>
+            <tr>
+              <td>Sikkerhet</td>
+              <td>Fokus på trygge og sikre betalinger</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Hvordan registrere seg på et instant casino?</h2>
+        <img class="seo-inline-image" src="instant%20casino%20images/instant%20casino%20registration.webp" alt="Instant casino registrering">
+        <p>Vi gjør det enkelt å komme i gang med et <strong>instant casino</strong>, uten lange skjemaer eller kompliserte prosesser. Vår løsning er utviklet for rask tilgang, slik at du kan starte spillingen på få minutter. Med moderne teknologi innen <strong>casino instant</strong> registrering, verifiseres kontoen din automatisk via sikre betalingsmetoder. Dette gir en trygg og effektiv opplevelse, samtidig som du beholder full kontroll over dine data og transaksjoner.</p>
+        <ul>
+          <li>Velg ønsket spillplattform</li>
+          <li>Klikk på registrer eller spill nå</li>
+          <li>Logg inn via sikker betalingsløsning</li>
+          <li>Bekreft identiteten din automatisk</li>
+          <li>Gjør et innskudd</li>
+          <li>Start spillingen umiddelbart</li>
+        </ul>
+
+        <h2>Bonuser og kampanjer på instant casino</h2>
+        <img class="seo-inline-image" src="instant%20casino%20images/instant%20casino%20bonuses.webp" alt="Instant casino bonuser">
+        <p>Vi tilbyr et bredt utvalg av bonuser og kampanjer på vårt <strong>instant casino</strong>, skreddersydd for å gi deg mer verdi og underholdning. Enten du er ny spiller eller allerede aktiv, sørger vi for løpende tilbud som gir ekstra spenning i spillopplevelsen. Våre kampanjer innen <strong>casino instant</strong> inkluderer alt fra velkomstbonuser til ukentlige turneringer og spesialtilbud. Vi oppdaterer jevnlig våre kampanjer slik at du alltid har tilgang til attraktive fordeler og nye muligheter for gevinster.</p>
+        <ul>
+          <li>Velkomstbonus</li>
+          <li>Turneringer og konkurranser</li>
+          <li>Live casino kampanjer</li>
+          <li>Ukentlige slots-tilbud</li>
+        </ul>
+
+        <h3>Velkomsttilbud</h3>
+        <p>Vårt velkomsttilbud gir nye spillere en sterk start med opptil 200 % bonus på første innskudd, opptil €7 500. Vi har designet denne bonusen for å gi deg mer spilletid og flere muligheter til å utforske plattformen. Bonusen aktiveres enkelt etter første innbetaling og kan brukes på et bredt utvalg av spill. Dette er en ideell måte å bli kjent med våre tjenester og få mest mulig ut av din første opplevelse hos oss.</p>
+        <ul>
+          <li>Opptil 200 % bonus</li>
+          <li>Maks €7 500</li>
+          <li>Gjelder første innskudd</li>
+        </ul>
+
+        <h3>Fotballturnering kampanje</h3>
+        <p>Vi tilbyr spennende turneringer inspirert av verdens største fotballbegivenheter, hvor du kan konkurrere om eksklusive premier. En av høydepunktene er muligheten til å vinne en VIP-tur til New York og oppleve live kamper. Denne kampanjen gir ekstra motivasjon og konkurransefølelse for spillere som ønsker mer enn bare vanlig spilling. Vi sørger for jevnlige oppdateringer og nye konkurranser.</p>
+        <ul>
+          <li>VIP-premier</li>
+          <li>Live sportsopplevelser</li>
+          <li>Konkurransebasert spilling</li>
+        </ul>
+
+        <h3>Instant Live Weekend</h3>
+        <p>Hver helg gir vi deg tilgang til eksklusive live casino kampanjer med raske premier og ekstra spenning. Du kan delta i live spill og konkurrere om belønninger opptil €5 000. Kampanjen er utviklet for spillere som foretrekker ekte dealer-opplevelser og høy intensitet. Dette gir en mer sosial og dynamisk spillopplevelse sammenlignet med tradisjonelle casinospill.</p>
+        <ul>
+          <li>Opptil €5 000 i premier</li>
+          <li>Gjelder live casino</li>
+          <li>Aktiv i helgene</li>
+        </ul>
+
+        <h3>Midweek Slots Special</h3>
+        <p>Midtukekampanjen vår gir deg ekstra grunner til å spille slots gjennom uken. Her kan du spinne deg til en andel av €2 500 i premier hver uke. Denne kampanjen er perfekt for spillere som liker spilleautomater og ønsker ekstra verdi i hverdagen. Vi oppdaterer tilbudet jevnlig for å holde opplevelsen frisk og engasjerende.</p>
+        <ul>
+          <li>€2 500 i ukentlige premier</li>
+          <li>Fokus på spilleautomater</li>
+          <li>Tilgjengelig hver uke</li>
+        </ul>
+
+        <h2>Spillutvalg på instant casino</h2>
+        <img class="seo-inline-image" src="instant%20casino%20images/instant%20casino%20games.webp" alt="Instant casino spillutvalg">
+        <p>Vi tilbyr et variert og moderne spillutvalg på vårt <strong>instant casino</strong>, nøye utvalgt for å gi deg den beste underholdningen. Vår plattform inkluderer alt fra klassiske bordspill til innovative spilleautomater og live dealer-opplevelser. Vi samarbeider med anerkjente leverandører for å sikre høy kvalitet, gode funksjoner og jevn spillflyt. Innen <strong>instantcasino</strong> fokuserer vi på rask tilgang til spillene, slik at du kan starte umiddelbart uten forsinkelser. Enten du foretrekker strategi, spenning eller enkle spillopplevelser, har vi noe som passer for deg. Vi oppdaterer kontinuerlig vårt utvalg for å inkludere nye titler og populære favoritter.</p>
+        <table class="seo-table" aria-label="Spilltyper hos instant casino">
+          <thead>
+            <tr>
+              <th>Spilltype</th>
+              <th>Beskrivelse</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Spilleautomater</td>
+              <td>Moderne slots med bonusfunksjoner og jackpotter</td>
+            </tr>
+            <tr>
+              <td>Live casino</td>
+              <td>Spill med ekte dealere i sanntid</td>
+            </tr>
+            <tr>
+              <td>Bordspill</td>
+              <td>Klassiske spill som blackjack, roulette og baccarat</td>
+            </tr>
+            <tr>
+              <td>Jackpotspill</td>
+              <td>Spill med progressive jackpotter og store gevinster</td>
+            </tr>
+            <tr>
+              <td>Hurtigspill</td>
+              <td>Enkle spill med raske runder og umiddelbare resultater</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Spillleverandører på instant casino</h2>
+        <p>Vi samarbeider med ledende utviklere i bransjen for å tilby et førsteklasses utvalg av spill på vårt <strong>instant casino</strong>. Våre partnere er kjent for innovasjon, kvalitet og pålitelig ytelse, noe som sikrer en stabil og underholdende spillopplevelse. Gjennom vårt <strong>instantcasino</strong> får du tilgang til spill med avansert grafikk, engasjerende funksjoner og rettferdige resultater. Vi velger kun leverandører med dokumentert kvalitet for å sikre at du alltid får det beste markedet har å tilby.</p>
+        <ul>
+          <li>NetEnt</li>
+          <li>Microgaming</li>
+          <li>Play’n GO</li>
+          <li>Evolution Gaming</li>
+          <li>Pragmatic Play</li>
+          <li>Yggdrasil</li>
+          <li>Quickspin</li>
+        </ul>
+
+        <h2>Instant casino mobilspill</h2>
+        <p>Vi har optimalisert vårt <strong>instant casino</strong> for mobilspill, slik at du kan spille hvor som helst og når som helst uten kompromisser på kvalitet. Plattformen vår fungerer sømløst på både smarttelefoner og nettbrett, uansett operativsystem. Med responsivt design og rask lastetid får du en like god opplevelse som på desktop. Vår <strong>casino instant</strong>-løsning gjør det mulig å logge inn og starte spill umiddelbart, uten nedlastinger eller kompliserte prosesser. Alle spill er tilpasset berøringsskjermer, noe som gir enkel navigasjon og intuitiv kontroll. Enten du foretrekker slots, live casino eller bordspill, kan du nyte full funksjonalitet direkte fra mobilen. Vi sørger for stabil ytelse, høy sikkerhet og kontinuerlige oppdateringer for å gi deg en moderne og fleksibel spillopplevelse på farten.</p>
+
+        <h2>Instant casino 24/7 kundestøtte</h2>
+        <img class="seo-inline-image" src="instant%20casino%20images/instant%20casino%20support.webp" alt="Instant casino kundestøtte">
+        <p>Vi tilbyr døgnåpen kundestøtte på vårt <strong>instant casino</strong>, slik at du alltid får hjelp når du trenger det. Vårt supportteam er tilgjengelig 24/7 og består av erfarne medarbeidere som kan assistere med alt fra tekniske spørsmål til kontoinformasjon. Gjennom vår <strong>instantcasino</strong>-plattform kan du enkelt kontakte oss via live chat eller e-post, og vi jobber kontinuerlig for å gi raske og effektive svar. Vi prioriterer din trygghet og sørger for at alle henvendelser håndteres profesjonelt, slik at du kan fokusere fullt på spillopplevelsen.</p>
+
+        <h2>Betalings- og uttaksmetoder på instant casino</h2>
+        <p>Vi tilbyr raske og sikre betalingsløsninger på vårt <strong>instant casino</strong>, slik at du kan gjøre innskudd og uttak uten forsinkelser. Vår plattform er utviklet for effektiv håndtering av transaksjoner, med fokus på sikkerhet og brukervennlighet. Med <strong>casino instant</strong>-teknologi blir mange uttak behandlet umiddelbart, noe som gir deg rask tilgang til dine gevinster. Vi samarbeider med pålitelige betalingsleverandører for å sikre trygge overføringer og en sømløs opplevelse for alle spillere.</p>
+        <table class="seo-table" aria-label="Betalings- og uttaksmetoder">
+          <thead>
+            <tr>
+              <th>Metode</th>
+              <th>Type</th>
+              <th>Behandlingstid</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Trustly</td>
+              <td>Direkte bankoverføring</td>
+              <td>Umiddelbar</td>
+            </tr>
+            <tr>
+              <td>Visa</td>
+              <td>Kreditt-/debetkort</td>
+              <td>Umiddelbar / 1-3 dager uttak</td>
+            </tr>
+            <tr>
+              <td>Mastercard</td>
+              <td>Kreditt-/debetkort</td>
+              <td>Umiddelbar / 1-3 dager uttak</td>
+            </tr>
+            <tr>
+              <td>Skrill</td>
+              <td>E-lommebok</td>
+              <td>Umiddelbar</td>
+            </tr>
+            <tr>
+              <td>Neteller</td>
+              <td>E-lommebok</td>
+              <td>Umiddelbar</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section container" id="app">
+      <h2>Betalingsmetoder</h2>
+      <div class="logo-grid">
+        <article class="logo-card"><img src="payment%20methods/visa-method.png" alt="Visa"></article>
+        <article class="logo-card"><img src="payment%20methods/mastercard-method.svg" alt="Mastercard"></article>
+        <article class="logo-card"><img src="payment%20methods/skrill-method.png" alt="Skrill"></article>
+        <article class="logo-card"><img src="payment%20methods/neteller-method.png" alt="Neteller"></article>
+        <article class="logo-card"><img src="payment%20methods/trustly-method.webp" alt="Trustly"></article>
+        <article class="logo-card"><img src="payment%20methods/bitcoin-method.png" alt="Bitcoin"></article>
+        <article class="logo-card"><img src="payment%20methods/payoneer-method.png" alt="Payoneer"></article>
+      </div>
+    </section>
+
+    <section class="section container">
+      <h2>Brukeranmeldelser</h2>
+      <div class="reviews">
+        <article class="review-card">
+          <div class="review-name">★★★★★ (5/5)</div>
+          <p>Vi er veldig fornøyde med hvor raskt alt fungerer på dette casino instant. Registreringen tok bare noen sekunder, og uttakene kom nesten med en gang. Spillutvalget er også imponerende, spesielt live casino.</p>
+          <p><em>- Martin, Oslo</em></p>
+        </article>
+        <article class="review-card">
+          <div class="review-name">★★★★☆ (4/5)</div>
+          <p>Vi liker hvor enkelt det er å komme i gang med dette instant casino. Ingen kompliserte steg, og alt fungerer sømløst på mobilen. Kundestøtten var også rask og hjelpsom da vi hadde spørsmål.</p>
+          <p><em>- Ingrid, Bergen</em></p>
+        </article>
+        <article class="review-card">
+          <div class="review-name">★★★★☆ (4/5)</div>
+          <p>Vi har hatt en god opplevelse med dette instantcasino så langt. Raske betalinger og mange spennende slots. Kunne vært enda flere bonuser, men totalt sett veldig bra.</p>
+          <p><em>- Lars, Trondheim</em></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container">
+      <h2>Ofte stilte spørsmål om instant casino</h2>
+      <div class="card-box">
+        <div class="accordion-item">
+          <button class="accordion-trigger" type="button" aria-expanded="false">
+            Hva er et instant casino?
+            <span>+</span>
+          </button>
+          <div class="accordion-panel">
+            Et <strong>instant casino</strong> er en spillplattform hvor vi kan registrere oss og spille uten lange registreringsprosesser. Vi logger inn via sikre betalingsløsninger og får umiddelbar tilgang til spill.
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" type="button" aria-expanded="false">
+            Er instantcasino trygt å bruke?
+            <span>+</span>
+          </button>
+          <div class="accordion-panel">
+            Ja, vi bruker kun sikre løsninger og samarbeider med pålitelige betalingsleverandører. Et <strong>instantcasino</strong> benytter avansert kryptering for å beskytte våre data og transaksjoner.
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" type="button" aria-expanded="false">
+            Hvor raskt kan vi ta ut gevinster?
+            <span>+</span>
+          </button>
+          <div class="accordion-panel">
+            Med <strong>casino instant</strong>-teknologi kan mange uttak behandles umiddelbart. I noen tilfeller kan det ta opptil 1–3 dager, avhengig av betalingsmetode.
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" type="button" aria-expanded="false">
+            Må vi laste ned noe for å spille?
+            <span>+</span>
+          </button>
+          <div class="accordion-panel">
+            Nei, vi spiller direkte i nettleseren uten nedlastinger. Dette gjelder både desktop og mobil, noe som gjør opplevelsen enkel og fleksibel.
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" type="button" aria-expanded="false">
+            Hvilke spill er tilgjengelige?
+            <span>+</span>
+          </button>
+          <div class="accordion-panel">
+            Vi får tilgang til et bredt utvalg av spill, inkludert spilleautomater, live casino og klassiske bordspill fra kjente leverandører.
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" type="button" aria-expanded="false">
+            Kan vi spille på mobil?
+            <span>+</span>
+          </button>
+          <div class="accordion-panel">
+            Ja, plattformen er fullt optimalisert for mobilbruk. Vi kan spille hvor som helst med samme funksjonalitet som på desktop.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="container">
+    <p class="page-updated"><span id="updatedLabel">Siden oppdatert:</span> <span id="updatedDate"></span></p>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-trust">
+        <a class="trust-link" href="https://www.gamstop.co.uk/" target="_blank" rel="noopener noreferrer">
+          <img src="trust%20badges/gamstop.png" alt="GamStop">
+        </a>
+        <a class="trust-link" href="https://www.gamcare.org.uk/" target="_blank" rel="noopener noreferrer">
+          <img src="trust%20badges/GamCare.png" alt="GamCare">
+        </a>
+        <a class="trust-link" href="https://www.egba.eu/" target="_blank" rel="noopener noreferrer">
+          <img src="trust%20badges/egba.svg" alt="EGBA">
+        </a>
+        <a class="trust-link" href="https://www.begambleaware.org/" target="_blank" rel="noopener noreferrer">
+          <img src="trust%20badges/gambleaware.png" alt="BeGambleAware">
+        </a>
+        <a class="trust-link" href="https://www.gamblingcommission.gov.uk/" target="_blank" rel="noopener noreferrer">
+          <img src="trust%20badges/uk-gambling-commission.svg" alt="UK Gambling Commission">
+        </a>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="/about-us/">Om oss</a></li>
+        <li><a href="/contact-us/">Kontakt oss</a></li>
+        <li><a href="/bonus-policy/">Bonuspolicy</a></li>
+        <li><a href="/privacy-policy/">Personvernpolicy</a></li>
+        <li><a href="/responsible-gambling/">Ansvarlig spilling</a></li>
+        <li><a href="/terms-and-conditions/">Vilkår og betingelser</a></li>
+      </ul>
+
+      <div class="providers-row">
+        <div class="providers-grid">
+          <article class="provider-card"><img src="providers/evolution.png" alt="Evolution"></article>
+          <article class="provider-card"><img src="providers/netentlogo.png" alt="NetEnt"></article>
+          <article class="provider-card"><img src="providers/pragmatic-play.png" alt="Pragmatic Play"></article>
+          <article class="provider-card"><img src="providers/playn-go-logo.png" alt="Play'n GO"></article>
+          <article class="provider-card"><img src="providers/microgaming-logo.png" alt="Microgaming"></article>
+          <article class="provider-card"><img src="providers/quickspin.png" alt="Quickspin"></article>
+          <article class="provider-card"><img src="providers/Games-Global.svg" alt="Games Global"></article>
+          <article class="provider-card"><img src="providers/Yggdrasil%20Gaming_Logo_1.png" alt="Yggdrasil Gaming"></article>
+        </div>
+      </div>
+
+      <p class="copyright">Opphavsrett © 2026 Instant Casino Casino. Alle rettigheter forbeholdt.</p>
+    </div>
+  </footer>
+
+  <script>
+    const accordionButtons = document.querySelectorAll(".accordion-trigger");
+    accordionButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const panel = button.nextElementSibling;
+        const expanded = button.getAttribute("aria-expanded") === "true";
+        button.setAttribute("aria-expanded", String(!expanded));
+        button.querySelector("span").textContent = expanded ? "+" : "−";
+        panel.style.display = expanded ? "none" : "block";
+      });
+    });
+
+    const updatedDate = document.getElementById("updatedDate");
+    const now = new Date();
+    updatedDate.textContent = now.toLocaleDateString("nb-NO", {
+      day: "numeric",
+      month: "long",
+      year: "numeric"
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="nb-no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lær mer om Instant Casino – Norges offisielle nettcasino. Vi tilbyr et trygt, raskt og underholdende spillopplevelse med hundrevis av spill, generøse bonuser og rask utbetaling.">
+  <title>Om Oss – Instant Casino Norge | Offisiell Nettside</title>
+  <link rel="canonical" href="/about-us/">
+  <link rel="icon" type="image/x-icon" href="../instant%20casino%20images/favicon%20(2).ico">
+  <style>
+    :root {
+      --bg-main: #04060a;
+      --bg-chrome: #0e1014;
+      --accent: #f0a433;
+      --text-main: #f2f3f5;
+      --text-muted: #b6bbc3;
+      --card: #121720;
+      --border: #242c3a;
+      --max-width: 1200px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle at top, #111624 0%, var(--bg-main) 40%);
+      color: var(--text-main);
+      font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+
+    a { color: var(--text-main); text-decoration: none; }
+    img { display: block; max-width: 100%; }
+
+    .container {
+      width: min(100% - 2rem, var(--max-width));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--bg-chrome);
+      border-bottom: 1px solid #171b25;
+    }
+
+    .header-inner {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.5rem 0;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      min-width: 0;
+    }
+
+    .logo {
+      width: 190px;
+      height: auto;
+      flex-shrink: 0;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      white-space: nowrap;
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover { color: var(--text-main); }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-shrink: 0;
+    }
+
+    .btn {
+      border: 0;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 700;
+      transition: transform 0.2s ease, filter 0.2s ease;
+      font-family: inherit;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      filter: brightness(1.05);
+      transform: translateY(-1px);
+    }
+
+    .btn-header {
+      background: var(--accent);
+      color: #111;
+      padding: 0.6rem 1rem;
+      font-size: 0.92rem;
+    }
+
+    .section { padding: 1.6rem 0; }
+
+    .seo-box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1rem;
+      overflow-x: auto;
+    }
+
+    .seo-box h1 {
+      margin: 0 0 0.9rem;
+      font-size: clamp(1.5rem, 2.8vw, 2.4rem);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .seo-box h2 {
+      margin: 1.25rem 0 0.7rem;
+      font-size: clamp(1.2rem, 2vw, 1.75rem);
+    }
+
+    .seo-box h3 {
+      margin: 1.1rem 0 0.65rem;
+      font-size: clamp(1.05rem, 1.8vw, 1.3rem);
+      color: #ffe4b6;
+    }
+
+    .seo-box ul,
+    .seo-box ol {
+      margin: 0.5rem 0 1rem 1.25rem;
+      padding: 0;
+    }
+
+    .seo-box table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid #2a3242;
+      margin: 0.9rem 0;
+    }
+
+    .seo-box th,
+    .seo-box td {
+      padding: 0.7rem;
+      text-align: left;
+      border-bottom: 1px solid #2a3242;
+      font-size: 0.95rem;
+    }
+
+    .seo-box th { background: #1b2230; }
+
+    .seo-box .review,
+    .seo-box .faq {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0.8rem;
+      background: #101621;
+      margin: 0.8rem 0;
+    }
+
+    .page-updated {
+      text-align: center;
+      color: var(--text-muted);
+      padding: 0.9rem 0 1.1rem;
+      font-size: 0.95rem;
+    }
+
+    .site-footer {
+      background: var(--bg-chrome);
+      border-top: 1px solid #171b25;
+      margin-top: 1rem;
+      padding-top: 1rem;
+    }
+
+    .footer-trust {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 0.75rem;
+    }
+
+    .trust-link {
+      border: 1px solid #262e3d;
+      border-radius: 10px;
+      background: #131924;
+      display: grid;
+      place-items: center;
+      padding: 0.75rem;
+      min-height: 82px;
+    }
+
+    .trust-link img {
+      max-height: 45px;
+      object-fit: contain;
+      width: auto;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem 1.1rem;
+      margin: 1rem 0;
+      padding: 0;
+      list-style: none;
+      justify-content: center;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .providers-row {
+      border-top: 1px solid #1e2532;
+      padding-top: 0.9rem;
+      margin-top: 0.45rem;
+    }
+
+    .providers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+      gap: 0.6rem;
+      align-items: center;
+    }
+
+    .provider-card {
+      border: 1px solid #242c3a;
+      border-radius: 10px;
+      background: #10161f;
+      min-height: 78px;
+      padding: 0.6rem;
+      display: grid;
+      place-items: center;
+    }
+
+    .provider-card img {
+      width: auto;
+      max-height: 40px;
+      object-fit: contain;
+    }
+
+    .copyright {
+      text-align: center;
+      padding: 1rem 0 1.2rem;
+      color: #9ea5b0;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .container { width: min(100% - 1rem, var(--max-width)); }
+
+      .header-inner {
+        min-height: 56px;
+        padding: 0.35rem 0;
+      }
+
+      .logo { width: 102px; }
+      .nav-links { display: none; }
+
+      .btn-header {
+        padding: 0.43rem 0.6rem;
+        font-size: 0.78rem;
+        border-radius: 8px;
+      }
+
+      .seo-box th,
+      .seo-box td { font-size: 0.85rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="header-left">
+        <a href="../" aria-label="Instant Casino hjem">
+          <img class="logo" src="../instant%20casino%20images/instant%20casino%20logo.svg" alt="Instant Casino logo">
+        </a>
+        <nav class="nav-links" aria-label="Hovednavigasjon">
+          <a href="../bonus/">Kampanjer</a>
+          <a href="../app/">App</a>
+        </nav>
+      </div>
+      <div class="header-actions">
+        <a class="btn btn-header" href="../login/">Logg inn</a>
+        <a class="btn btn-header" href="/go/">Register</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container">
+      <div class="seo-box">
+<h1>Om Oss – Instant Casino</h1>
+
+<p>Velkommen til den offisielle nettsiden til Instant Casino i Norge. Vi er stolte av å tilby norske spillere en av de mest spennende, trygge og brukervennlige casinoopplevelsene som finnes på nett i dag. Hos oss handler alt om deg – spilleren – og vi jobber hver eneste dag for å sikre at opplevelsen din er så god som mulig, fra første innskudd til siste gevinst.</p>
+
+<h2>Hvem Er Vi?</h2>
+
+<p>Instant Casino er et moderne nettcasino som ble skapt med én klar visjon: å gi spillere en umiddelbar, problemfri og underholdende spillopplevelse. Navnet vårt sier alt – vi handler om øyeblikket. Vi ønsker ikke at du skal bruke tid på unødvendige prosesser, lange ventetider eller kompliserte registreringsprosedyrer. I stedet ønsker vi at du skal komme rett inn i spillgleden, raskt og enkelt.</p>
+
+<p>Vi er et internasjonalt anerkjent casinomerke som har bygget et solid rykte på ærlighet, transparens og ansvarlig spill. Vår plattform er lisensiert og regulert i henhold til gjeldende internasjonale spilllover, noe som betyr at du alltid kan stole på at vi opererer på en rettferdig og lovlig måte. Vi tar sikkerheten til våre spillere på alvor, og bruker den nyeste krypteringsteknologien for å beskytte dine personlige opplysninger og finansielle transaksjoner.</p>
+
+<h2>Vår Spillportefølje</h2>
+
+<p>Hos Instant Casino har vi et enormt utvalg av spill som passer for alle typer spillere – enten du er nybegynner eller erfaren. Vi samarbeider med verdens ledende spillutviklere, inkludert navn som NetEnt, Pragmatic Play, Play'n GO, Evolution Gaming, Microgaming og mange flere. Dette sikrer at vi alltid kan tilby deg de nyeste og mest populære spillene på markedet.</p>
+
+<p>Vår spillkatalog inkluderer hundrevis av spilleautomater, fra klassiske fruktmaskiner til moderne videoslots med avanserte bonusfunksjoner, gratisspinn og progressive jackpotter. Hvis du foretrekker bordspill, tilbyr vi et bredt utvalg av blackjack, rulett, baccarat og poker i ulike varianter. For deg som ønsker den ekte casinofølelsen hjemmefra, har vi et imponerende live casino-seksjon der ekte dealere leder spillene i sanntid via høykvalitets videostrømming.</p>
+
+<p>Vi oppdaterer spillbiblioteket vårt jevnlig, slik at du alltid finner noe nytt og spennende å prøve. Vi lytter til tilbakemeldingene fra våre spillere og jobber kontinuerlig med å utvide og forbedre tilbudet vårt basert på hva dere ønsker.</p>
+
+<h2>Bonuser og Kampanjer</h2>
+
+<p>Vi tror på å belønne våre spillere, og det er derfor vi tilbyr en rekke attraktive bonuser og kampanjer gjennom hele spillerreisen din hos oss. Nye spillere hos Instant Casino ønskes velkommen med en generøs velkomstbonus som gir deg mer å spille for fra første stund. Vi sørger for at bonusbetingelsene våre er tydelige og rettferdige, slik at du alltid vet nøyaktig hva du får og hva som kreves for å ta ut gevinster.</p>
+
+<p>I tillegg til velkomstbonusen tilbyr vi regelmessige kampanjer, reload-bonuser, cashback-tilbud og gratisspinn til eksisterende spillere. Vi har også et lojalitetsprogram der du samler poeng for hvert spill du spiller, og disse poengene kan veksles inn i kontanter eller andre fordeler. Jo mer du spiller, desto mer belønner vi deg.</p>
+
+<p>Vi holder deg alltid oppdatert om de nyeste kampanjene gjennom e-post, SMS og varsler på plattformen vår. Sørg for at du har aktivert varsler slik at du aldri går glipp av et godt tilbud.</p>
+
+<h2>Betalingsmetoder og Rask Utbetaling</h2>
+
+<p>Vi forstår at enkel og rask tilgang til pengene dine er viktig. Derfor tilbyr vi et bredt spekter av betalingsmetoder som er populære blant norske spillere. Du kan gjøre innskudd og uttak med Visa, Mastercard, e-lommebøker som Skrill og Neteller, bankoverføring, og ulike lokale betalingsløsninger. Vi jobber også kontinuerlig med å legge til nye betalingsalternativer for å gjøre det enda enklere for deg.</p>
+
+<p>En av tingene vi er mest stolte av er behandlingstiden vår for utbetalinger. Vi behandler utbetalingsforespørsler raskt, og i mange tilfeller kan du ha pengene på kontoen din innen få timer. Vi mener at gevinsten din er din, og vi setter ingen unødvendige hindringer i veien for at du skal få tilgang til den.</p>
+
+<h2>Ansvarlig Spill</h2>
+
+<p>Hos Instant Casino tar vi ansvarlig spill svært alvorlig. Vi ønsker at alle spillerne våre skal ha en trygg og positiv spillopplevelse, og vi er forpliktet til å fremme sunn spillatferd. Vi tilbyr en rekke verktøy som hjelper deg med å holde kontrollen over spillingen din, inkludert innskuddsgrenser, tapgrenser, øktgrenser og muligheten til å ta en pause eller selvekskludere deg fra plattformen.</p>
+
+<p>Dersom du opplever at spillingen begynner å påvirke livet ditt negativt, oppfordrer vi deg til å bruke disse verktøyene eller ta kontakt med oss for støtte. Vi samarbeider også med anerkjente organisasjoner for spillavhengighet og kan veilede deg til riktig hjelp. Husk at spill skal være underholdning, ikke en kilde til stress eller økonomiske problemer.</p>
+
+<h2>Kundeservice</h2>
+
+<p>Vi er her for deg når du trenger oss. Vårt dedikerte kundeserviceteam er tilgjengelig døgnet rundt, alle dager i uken, for å hjelpe deg med eventuelle spørsmål eller problemer. Du kan nå oss via live chat direkte på nettsiden, e-post eller telefon. Vi streber alltid etter å gi raske, vennlige og nyttige svar, og vi er ikke fornøyde før du er det.</p>
+
+<p>Vi har også en omfattende FAQ-seksjon på nettsiden vår der du kan finne svar på de vanligste spørsmålene om kontoregistrering, bonuser, betalinger og tekniske problemer. Vi oppdaterer denne seksjonen jevnlig for å sikre at informasjonen alltid er aktuell og nøyaktig.</p>
+
+<h2>Hvorfor Velge Instant Casino?</h2>
+
+<p>Det er mange nettcasinoer der ute, men vi mener at Instant Casino skiller seg ut på flere viktige måter. Vi kombinerer et enormt spillutvalg med rask utbetaling, generøse bonuser, topp sikkerhet og enestående kundeservice – alt på én brukervennlig plattform. Vi er stolt av å være det foretrukne valget for tusenvis av norske spillere, og vi jobber hardt hver dag for å fortjene den tilliten.</p>
+
+<p>Enten du spiller på PC, nettbrett eller mobiltelefon, er plattformen vår optimalisert for å gi deg den beste opplevelsen uansett enhet. Vi har ingen kompromisser når det gjelder kvalitet, og det er nettopp det som gjør oss til et ledende nettcasino i Norge.</p>
+
+<p>Takk for at du har valgt Instant Casino – din offisielle casino-destinasjon i Norge. Vi ser frem til å gi deg uforglemmelige spillopplevelser i lang tid fremover. Lykke til ved spillebordet!</p>
+      </div>
+    </section>
+  </main>
+
+  <div class="container">
+    <p class="page-updated"><span>Siden oppdatert:</span> <span class="updatedDate"></span></p>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-trust">
+        <a class="trust-link" href="https://www.gamstop.co.uk/" target="_blank" rel="noopener noreferrer">
+          <img src="../trust%20badges/gamstop.png" alt="GamStop">
+        </a>
+        <a class="trust-link" href="https://www.gamcare.org.uk/" target="_blank" rel="noopener noreferrer">
+          <img src="../trust%20badges/GamCare.png" alt="GamCare">
+        </a>
+        <a class="trust-link" href="https://www.egba.eu/" target="_blank" rel="noopener noreferrer">
+          <img src="../trust%20badges/egba.svg" alt="EGBA">
+        </a>
+        <a class="trust-link" href="https://www.begambleaware.org/" target="_blank" rel="noopener noreferrer">
+          <img src="../trust%20badges/gambleaware.png" alt="BeGambleAware">
+        </a>
+        <a class="trust-link" href="https://www.gamblingcommission.gov.uk/" target="_blank" rel="noopener noreferrer">
+          <img src="../trust%20badges/uk-gambling-commission.svg" alt="UK Gambling Commission">
+        </a>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="../about-us/">Om oss</a></li>
+        <li><a href="../contact-us/">Kontakt oss</a></li>
+        <li><a href="../bonus-policy/">Bonuspolicy</a></li>
+        <li><a href="../privacy-policy/">Personvernpolicy</a></li>
+        <li><a href="../responsible-gambling/">Ansvarlig spilling</a></li>
+        <li><a href="../terms-and-conditions/">Vilkår og betingelser</a></li>
+      </ul>
+
+      <div class="providers-row">
+        <div class="providers-grid">
+          <article class="provider-card"><img src="../providers/evolution.png" alt="Evolution"></article>
+          <article class="provider-card"><img src="../providers/netentlogo.png" alt="NetEnt"></article>
+          <article class="provider-card"><img src="../providers/pragmatic-play.png" alt="Pragmatic Play"></article>
+          <article class="provider-card"><img src="../providers/playn-go-logo.png" alt="Play'n GO"></article>
+          <article class="provider-card"><img src="../providers/microgaming-logo.png" alt="Microgaming"></article>
+          <article class="provider-card"><img src="../providers/quickspin.png" alt="Quickspin"></article>
+          <article class="provider-card"><img src="../providers/Games-Global.svg" alt="Games Global"></article>
+          <article class="provider-card"><img src="../providers/Yggdrasil%20Gaming_Logo_1.png" alt="Yggdrasil Gaming"></article>
+        </div>
+      </div>
+
+      <p class="copyright">Opphavsrett © 2026 Instant Casino Casino. Alle rettigheter forbeholdt.</p>
+    </div>
+  </footer>
+
+  <script>
+    const dates = document.querySelectorAll('.updatedDate');
+    const now = new Date();
+    const formatted = now.toLocaleDateString('nb-NO', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric'
+    });
+    dates.forEach((el) => {
+      el.textContent = formatted;
+    });
+  </script>
+</body>
+</html>
