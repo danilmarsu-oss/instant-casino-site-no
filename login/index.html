@@ -278,6 +278,29 @@
       font-size: 0.95rem;
     }
 
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      justify-content: center;
+      margin: 0.5rem 0 1rem;
+    }
+
+    .social-link {
+      border: 1px solid #2a3242;
+      border-radius: 999px;
+      padding: 0.45rem 0.8rem;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      background: #111824;
+      transition: color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .social-link:hover {
+      color: var(--text-main);
+      border-color: var(--accent);
+    }
+
     .providers-row {
       border-top: 1px solid #1e2532;
       padding-top: 0.9rem;
@@ -478,6 +501,13 @@
         <li><a href="../responsible-gambling/">Ansvarlig spilling</a></li>
         <li><a href="../terms-and-conditions/">Vilkår og betingelser</a></li>
       </ul>
+
+      <div class="social-links" aria-label="Offisielle sosiale medier">
+        <a class="social-link" href="https://www.instagram.com/instantplay_" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a class="social-link" href="https://t.me/OfficialInstantCasino" target="_blank" rel="noopener noreferrer">Telegram</a>
+        <a class="social-link" href="https://www.youtube.com/@Instant_Casino" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a class="social-link" href="https://x.com/InstantPlay_" target="_blank" rel="noopener noreferrer">X</a>
+      </div>
 
       <div class="providers-row">
         <div class="providers-grid">
